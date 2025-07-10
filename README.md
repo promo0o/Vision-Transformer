@@ -1,35 +1,8 @@
 Vision Transformer vs Convolution Neural Network
 
-Open the ".py" file
-Download the Data set from this link : https://huggingface.co/datasets/student/CIFAR-10/tree/main
-Adjust the address of train and test directories
-Run the code
-CIFAR-10 Image Classification with Vision Transformer
-Description
-This project implements a Vision Transformer (ViT) model for image classification on a custom CIFAR-10 dataset. The dataset consists of 32x32 RGB images across 10 classes (plane, car, bird, cat, deer, dog, frog, horse, ship, truck). The model uses a pre-trained vit_tiny_patch16_224 from the timm library, fine-tuned for CIFAR-10. The project includes data loading, training with mixed precision, evaluation, and single-image prediction capabilities.
+Open the ".py" file Download the Data set from this link : https://huggingface.co/datasets/student/CIFAR-10/tree/main Adjust the address of train and test directories Run the code CIFAR-10 Image Classification with Vision Transformer Description This project implements a Vision Transformer (ViT) model for image classification on a custom CIFAR-10 dataset. The dataset consists of 32x32 RGB images across 10 classes (plane, car, bird, cat, deer, dog, frog, horse, ship, truck). The model uses a pre-trained vit_tiny_patch16_224 from the timm library, fine-tuned for CIFAR-10. The project includes data loading, training with mixed precision, evaluation, and single-image prediction capabilities.
 
-Features
-Dataset: Custom CIFAR-10 dataset with PNG images organized in train/test folders.
-Model: Pre-trained Vision Transformer (vit_tiny_patch16_224) fine-tuned for 10 classes.
-Training: Uses AdamW optimizer, cross-entropy loss, StepLR scheduler, and mixed precision for efficiency.
-Evaluation: Computes test accuracy.
-Prediction: Supports single-image classification with class name output.
-Error Handling: Skips invalid images during dataset loading.
-Prerequisites
-Python 3.8+
-Libraries:
-torch
-torchvision
-timm
-Pillow
-tqdm
-CUDA-enabled GPU (optional, for faster training)
-Custom CIFAR-10 dataset (PNG images in train/test folders)
-Installation
-Clone the repository:
-git clone https://github.com/yourusername/cifar10-vit-classification.git
-cd cifar10-vit-classification
-#Install dependencies: pip install torch torchvision timm Pillow tqdm
+Features Dataset: Custom CIFAR-10 dataset with PNG images organized in train/test folders. Model: Pre-trained Vision Transformer (vit_tiny_patch16_224) fine-tuned for 10 classes. Training: Uses AdamW optimizer, cross-entropy loss, StepLR scheduler, and mixed precision for efficiency. Evaluation: Computes test accuracy. Prediction: Supports single-image classification with class name output. Error Handling: Skips invalid images during dataset loading. Prerequisites Python 3.8+ Libraries: torch torchvision timm Pillow tqdm CUDA-enabled GPU (optional, for faster training) Custom CIFAR-10 dataset (PNG images in train/test folders) Installation Clone the repository: git clone https://github.com/yourusername/cifar10-vit-classification.git cd cifar10-vit-classification #Install dependencies: pip install torch torchvision timm Pillow tqdm
 
 #Dataset Setup: Prepare the custom CIFAR-10 dataset (not included in the repository due to size). Place images in two folders: cifar-train and cifar-test, with filenames like plane_001.png, car_002.png, etc.
 
